@@ -1,106 +1,123 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>Projet CEMEA - Isaia Lemaitre </title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-        <style>
-            .video-container {
-                position: relative;
-                width: 100%;
-                border-radius: 0.25em;
-                overflow: hidden;
-                margin-top: 2em;
-                margin-bottom: 2em;
-                line-height: 0;
-            }
-            video {
-                width: 100%;
-                height: auto;
-                display: block;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            }
-        </style>
-    </head>
-    <body class="is-preload">
+	<head>
+		<title>Projet CEMEA - Isaia Lemaitre</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			
+			.solution-box {
+				border-color: #44b4ac !important;
+				animation: glowPulse 3s infinite ease-in-out;			
+				transition: transform 0.3s ease;
+			}
 
-        <header id="header">
-                <a href="index.html" class="title">Retour au Portfolio</a>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                    </ul>
-                </nav>
-            </header>
+			.solution-box:hover { transform: translateY(-5px); }
 
-        <div id="wrapper">
+			/* Style pour les badges de la Stack Technique */
+			.tech-badge {
+				background: rgba(68, 180, 172, 0.2);
+				border: 1px solid #44b4ac;
+				border-radius: 4px;
+				padding: 0.2em 0.8em;
+				margin: 0.2em;
+				display: inline-block;
+				font-size: 0.85em;
+				color: #ffffff;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
 
-                <section id="main" class="wrapper">
-                        <div class="inner">
-                            <h1 class="major">Module autonome de centralisation</h1>
-                            
-                            <div class="row">
-                                <div class="col-12">
-                                    <h3>Contexte</h3>
-                                    <p>Les commanditaires du CEMEA (Association de formateurs d'éducateurs sociaux) ont créé un petit jeu de type Serious game qui permet de compléter un cours dispensé par les formateurs pour leurs élèves (en l'occurrence sur la loi 2002-2). Ce jeu qui met  en scène des situations de cas pratique permet de tester les acquis des élèves, puisque les réponses et le compte rendu que le jeu demandait aux élèves étaient envoyés par mail aux formateurs, ces derniers pouvant par la suite repérer les lacunes et travailler dessus. Ce jeu offre une interaction nouvelle et intéressante pour les formateurs et leurs élèves, cependant si le CEMEA a commandité notre formation c’est parce que les formateurs n’utilisaient pas du tout le jeu et restaient réticents face au numérique. Le demande était donc de concevoir une solution de médiation numérique qui favorise l’utilisation par les formateurs des outils numériques notamment le Serious game.</p>
-                                </div>
+		<header id="header">
+			<a href="index.html" class="title">Retour au Portfolio</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Accueil</a></li>
+				</ul>
+			</nav>
+		</header>
 
-                                <div class="col-6 col-12-medium">
-                                    <h3>Notre Analyse</h3>
-                                    <p>L'obstacle majeur identifié était la charge administrative. Chaque partie jouée générait un compte rendu envoyé individuellement par mail. Pour un groupe de 60 étudiants, le formateur devait traiter 60 mails isolés pour obtenir une vision globale de la progression de sa classe. Une contrainte supplémentaire qui vient nourrir l’image d’un numérique perçu comme opaque et contraignant par les formateurs.</p>
-                                </div>
-                                <div class="col-6 col-12-medium">
-                                    <h3>Notre Solution</h3>
-                                    <p>Rassembler les comptes rendus dans un tableur unique plutôt que soixante mails. Ensuite de façon automatisée via une intelligence artificielle, générée à partir de ce tableau une présentation synthétique résumant l’avis général et les tendances de manière illustrative et intuitive pour les formateurs. Enfin à partir de cette synthèse générer un support de cours adapté aux forces et faiblesses des élèves. Le tout automatisé et disponible sur un mur commun unique.</p>
-                                </div>
-                            </div>
+		<div id="wrapper">
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<h1 class="major">Module autonome de centralisation</h1>
+					
+					<div class="row">
+						<div class="col-12">
+							<h3>Contexte</h3>
+							<p>Les commanditaires du CEMEA (Association de formateurs d'éducateurs sociaux) ont créé un petit jeu de type Serious game qui permet de compléter un cours dispensé par les formateurs pour leurs élèves (en l'occurrence sur la loi 2002-2). Ce jeu qui met  en scène des situations de cas pratique permet de tester les acquis des élèves, puisque les réponses et le compte rendu que le jeu demandait aux élèves étaient envoyés par mail aux formateurs, ces derniers pouvant par la suite repérer les lacunes et travailler dessus. Ce jeu offre une interaction nouvelle et intéressante pour les formateurs et leurs élèves, cependant si le CEMEA a commandité notre formation c’est parce que les formateurs n’utilisaient pas du tout le jeu et restaient réticents face au numérique. Le demande était donc de concevoir une solution de médiation numérique qui favorise l’utilisation par les formateurs des outils numériques notamment le Serious game.</p>
+						</div>
 
-                            <hr />
+						<div class="col-6 col-12-medium">
+							<h3>Notre Analyse</h3>
+							<p>L'obstacle majeur identifié était la charge administrative. Chaque partie jouée générait un compte rendu envoyé individuellement par mail. Pour un groupe de 60 étudiants, le formateur devait traiter 60 mails isolés pour obtenir une vision globale de la progression de sa classe. Une contrainte supplémentaire qui vient nourrir l’image d’un numérique perçu comme opaque et contraignant par les formateurs.</p>
+						</div>
+						
+						<div class="col-6 col-12-medium">
+							<div class="box solution-box">
+								<h3>Notre Solution</h3>
+								<p>Rassembler les comptes rendus dans un tableur unique plutôt que soixante mails. Ensuite de façon automatisée via une intelligence artificielle, générée à partir de ce tableau une présentation synthétique résumant l’avis général et les tendances de manière illustrative et intuitive pour les formateurs. Enfin à partir de cette synthèse générer un support de cours adapté aux forces et faiblesses des élèves. Le tout automatisé et disponible sur un mur commun unique.</p>
+							</div>
+						</div>
+					</div>
 
-                            <h2>Maquette (Proof of Concept) du module de centralisation</h2>
-                            
-                            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
-                                            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-                                            border-radius: 8px; will-change: transform;">
-                                            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-                                                src="https://www.canva.com/design/DAG-T9Lpmhs/yK1HE9srj7hjt8YXMYwHTA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-                                            </iframe>
-                            </div>
-                            <p><a href="https://www.canva.com/design/DAG-T9Lpmhs/yK1HE9srj7hjt8YXMYwHTA/view?utm_content=DAG-T9Lpmhs&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Maquette interactive</a> par Isaia Lemaitre</p>
+					<hr />
 
-                            <div class="row">
-                                <div class="col-12">
-                                    <p>Ce projet fut réalisé au sein d'un groupe de quatre personnes, j'ai principalement été en charge de la conception et de la réalisation technique, notamment de la maquette. Ce travail s'intègre dans un dossier de 50 pages comprenant : une analyse de besoins, ressources et risques, les étapes de l’élaboration de notre module de centralisation, notre stratégie d'implantation notamment avec une formation, le plan de médiatisation sur les réseaux sociaux et auprès des formateurs, et enfin notre stratégie du suivi des résultats pour d'éventuelles améliorations.</p>
+					<h2>Maquette (Proof of Concept) du module</h2>
+					<div style="position: relative; width: 100%; height: 0; padding-top: 56.25%; box-shadow: 0 2px 8px rgba(0,0,0,0.2); margin: 2em 0; overflow: hidden; border-radius: 8px;">
+						<iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none;"
+							src="https://www.canva.com/design/DAG-T9Lpmhs/yK1HE9srj7hjt8YXMYwHTA/view?embed" allowfullscreen>
+						</iframe>
+					</div>
+					<p><a href="https://www.canva.com/design/DAG-T9Lpmhs/yK1HE9srj7hjt8YXMYwHTA/view" target="_blank" class="button small">Maquette plein écran</a></p>
 
-                                    <p>Ce projet de six semaines en collaboration à distance, m’a permis de développer mes compétences en gestion et coordination, mais aussi mes compétences techniques d’analyse de besoin et ressources, et de conception numérique notamment d’agentisation et de prompting.</p>
-                                </div>
-                            </div>
+					<hr />
 
-                            <ul class="actions" style="margin-top: 2em;">
-                                <li><a href="index.html" class="button">Retour à l'accueil</a></li>
-                            </ul>
-                        </div>
-                    </section>
+					<div class="row">
+						<div class="col-7 col-12-medium">
+							<h3>Réalisation & évolutions</h3>
+							<p>Ce projet de six semaines en collaboration à distance, m’a permis de développer mes compétences en gestion et coordination, mais aussi mes compétences techniques d’analyse de besoin et ressources, et de conception numérique notamment d’agentisation et de prompting.</p>
+							<p>Le travail complet intègre un dossier stratégique de 50 pages incluant l'analyse de besoins, la stratégie d'implantation, le plan de médiatisation et les protocoles de suivi des résultats.</p>
+						</div>
+						<div class="col-5 col-12-medium">
+							<h3>Stack Technique</h3>
+							<div class="tech-stack">
+								<span class="tech-badge">IA & Prompting</span>
+								<span class="tech-badge">Canva</span>
+								<span class="tech-badge">Gestion de projet</span>
+								<span class="tech-badge">Analyse de besoins</span>
+								<span class="tech-badge">Note de cadrage</span>
+								<span class="tech-badge">Dossier pilote</span>
+								<span class="tech-badge">Make (Agentisation)</span>
+								<span class="tech-badge">Trello</span>
+							</div>
+						</div>
+					</div>
 
-            </div>
+					<ul class="actions" style="margin-top: 3em;">
+						<li><a href="index.html" class="button">Retour à l'accueil</a></li>
+					</ul>
+				</div>
+			</section>
+		</div>
 
-        <footer id="footer" class="wrapper alt">
-                <div class="inner">
-                    <ul class="menu">
-                        <li>&copy; Isaia Lemaitre. Tous droits réservés.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                    </ul>
-                </div>
-            </footer>
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; Isaia Lemaitre. Tous droits réservés.</li>
+				</ul>
+			</div>
+		</footer>
 
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.scrollex.min.js"></script>
-            <script src="assets/js/jquery.scrolly.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
-
-    </body>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
 </html>
