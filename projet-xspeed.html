@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -27,13 +28,13 @@
 		<!-- Wrapper -->
 			<section id="main" class="wrapper">
 				<div class="inner">
-					<h1 class="major">XSPEED</h1>
+					<h1><span class="zen-dots">XSPEED</span></h1>
 					
 					<div class="row">
 						<div class="col-12">
-							<h3>Contexte</h3>
+							<h3>Présentation</h3>
 							<p>Actuellement en cours de développement pour une sortie prévue vers septembre (sur PC et mobile), ce jeu de réaction rapide type rogue lite est un de mes projets personnels fruit de ma passion pour le développement appris en autodidacte.</p>
-							<p>Ce jeu est inspiré du type de jeu “Ice slider” originalement dans le registre puzzle et casse tête, que j’ai revisité dans un format rapide et nerveux, avec progression rogue lite (répétition de niveau avec bonus à débloquer) dont le but est d’atteindre des scores toujours plus hauts.</p>
+							<p><span class="zen-dots">XSPEED</span> est inspiré du type de jeu “Ice slider” originalement dans le registre puzzle et casse tête, que j’ai revisité dans un format rapide et nerveux, avec progression rogue lite (répétition de niveau avec bonus à débloquer) dont le but est d’atteindre des scores toujours plus hauts.</p>
 						</div>
 					</div>
 
@@ -42,14 +43,7 @@
 					<div class="row">
 						<div class="col-5 col-12-medium" style="text-align: center;">
 							<div style="display: inline-block; width: 360px; height: 640px; background: #000; border-radius: 12px; overflow: hidden; border: 1px solid #333; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
-								<iframe 
-									id="godot-game"
-									src="https://xspeedproto.netlify.app/" 
-									width="360" 
-									height="640" 
-									style="border: none; display: block;" 
-									allowfullscreen>
-								</iframe>
+								<iframe id="godot-game" src="https://xspeedproto.netlify.app/" width="360" height="640" style="border: none; display: block;" allowfullscreen></iframe>
 							</div>
 							<div style="margin-top: 15px;">
 								<button class="button small fit" onclick="goFullscreen();">Plein écran</button>
@@ -58,7 +52,7 @@
 
 						<div class="col-7 col-12-medium" style="padding-top: 2em;">
 							<h3 style="margin-top: 0;">Essayer la Demo</h3>
-							<p>Prototype Web Demo de gameplay “ice slider” en grille isométrique. Tentez d’atteindre les <strong>10 000 points</strong> (astuce : dépassez les 100 de combo).</p>
+							<p>Prototype Web Demo de gameplay “ice slider” en grille isométrique. Tentez d’atteindre les <strong>10 000 points</strong> (astuce : dépassez les 100 de combo pour multiplier le score)</strong>.</p>
 							
 							<h3>Commandes</h3>
 							<div style="display: flex; justify-content: space-between; margin-bottom: 1em; max-width: 320px;">
@@ -69,18 +63,63 @@
 								<div style="flex: 1;">↙ <strong>N</strong> : Bas gauche</div>
 								<div style="flex: 1;">| <strong>B</strong> ↘ : Bas droite</div>
 							</div>
-
 							<hr />
-
 							<h3>Détails Techniques</h3>
-							<ul class="alt">
-								<li><strong>Moteur :</strong> Godot 4.4</li>
-								<li><strong>Version :</strong> Prototype web HTML</li>
-								<li><strong>Hébergement :</strong> Netlify</li>
-							</ul>
-							<p style="font-size: 0.8em; opacity: 0.7;">
-								<em>Note : Version Démo Web très allégée avec de nombreuses fonctionnalités désactivées (niveaux, missions, achats, musiques...).</em>
+
+                            <ul>
+
+                                <li><strong>Moteur :</strong> Godot 4.4</li>
+
+                                <li><strong>Version :</strong> Prototype web HTML</li>
+
+                                <li><strong>Hébergement :</strong> Netlify</li>
+
+                            </ul>
+
+                            <p style="font-size: 0.8em; opacity: 0.7;">
+							<p style="font-size: 0.8em; opacity: 0.7;"><em>Note : Version Démo Web très allégée avec de nombreuses fonctionnalités désactivées (missions, progression, musiques...) et utilisant des assets temporaires.</em></p>
+						</div>
+					</div>
+
+					<hr />
+
+					<div class="row">
+						<div class="col-7 col-12-medium">
+							<h3>Évolutions & Stratégie</h3>
+							<p>
+								Sur les <strong>slides 1</strong> et <strong>2</strong>, on peut voir la transition patron/rendu final. Dessiné main sur tout support numérique de dessin (Paint, Piskel…) le patron est ensuite interprétée par mon code et transforme les couleurs en objets virtuels : 
+								en <span style="color: #ffcc00; font-weight: bold;">jaune</span> les gems (ou Beads), 
+								en <span style="color: #000000; font-weight: bold;">noir</span> les murs, 
+								en <span style="color: #bf5af2; font-weight: bold;">violet</span> les lasers… 
+								Cette méthode me permet d’exporter une partie du travail de création, sur mon téléphone notamment.
 							</p>
+
+							<p>
+								Je travaille actuellement sur l’ajout de nouvelles maps (5 au total) qui viendront diversifier le gameplay et la difficulté, 
+								mais aussi rafraîchir l'expérience UI/UX (<strong>slide 3</strong>). 
+								Je peaufine également l’aspect rogue-lite et la progression du jeu avec les missions et le système de modules (<strong>slide 4</strong>).
+							</p>
+							<p>
+								Le jeu, actuellement uniquement en <strong>anglais</strong> pour la standardisation, vise un public jeune par son rythme rapide et sa direction artistique rappelant d'autres jeux du même type comme <em>Geometry Dash</em>.
+							</p>
+
+							<p>
+								Sur le marché actuel, le format mobile est prédominant, notamment en <strong>Asie du Sud-Est</strong>. Le gameplay <em>fast-paced</em> (rythme rapide) et le genre <em>rogue-lite</em> sont deux styles très prisés de la communauté gaming mobile actuelle.
+							</p>
+
+						</div>
+
+						<div class="col-5 col-12-medium" style="text-align: center;">
+							<div style="position: relative; width: 100%; max-width: 300px; height: 580px; box-shadow: 0 4px 20px rgba(0,0,0,0.4); border-radius: 8px; overflow: hidden; border: 1px solid #333; margin: 0 auto;">
+								<iframe 
+									loading="lazy" 
+									style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+									src="https://www.canva.com/design/DAHDSHAwgYA/view?embed" 
+									allowfullscreen="allowfullscreen" 
+									allow="fullscreen">
+								</iframe>
+							</div>
+							<p style="margin-top: 10px;"><a href="https://www.canva.com/design/DAHDSHAwgYA/view" target="_blank" class="button small">Voir sur Canva</a></p>
 						</div>
 					</div>
 
@@ -89,27 +128,17 @@
 					<div class="row">
 						<div class="col-7 col-12-medium">
 							<h3>Réalisation & évolutions</h3>
-							<p>Ce projet m'a permis d'appréhender la chaîne de production complète d'un jeu vidéo. En tant que développeur solo, j'ai dû alterner entre plusieurs rôles clés :</p>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul>
-										<li>Game & Level Design</li>
-										<li>Programmation GDScript</li>
-										<li>UI/UX Design</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul>
-										<li>Technical Art & Graphisme</li>
-										<li>Sound Design</li>
-										<li>Stratégie de déploiement</li>
-									</ul>
-								</div>
-							</div>
+							<p>
+								Ce projet m’a permis d’appréhender en profondeur les multiples facettes de la création d’un jeu vidéo, de sa conception initiale à son déploiement. J'ai pu explorer seul les différentes <strong>missions</strong> qui, au sein de structures plus importantes, auraient pu nécessité des pôles de spécialistes .
+							</p>
+
+							<p>
+								Cette expérience confirme mes compétences en <strong>développement</strong> et en <strong>gestion de projet long terme</strong> ( 2 ans ). Me forgeant une méthodologie et des compétences pour envisager de futurs projets plus ambitieux.
+							</p>
 						</div>
 
 						<div class="col-5 col-12-medium">
-							<h3>Outils & Méthodes</h3>
+							<h3>Stack Technique</h3>
 							<div style="display: flex; flex-wrap: wrap; gap: 8px;">
 								<style>
 									.tech-badge {
@@ -123,13 +152,19 @@
 										color: #ffffff;
 									}
 								</style>
-								<span class="tech-badge">IA & Prompting</span>
-								<span class="tech-badge">Canva</span>
+								<span class="tech-badge">GDScript</span>
+                                <span class="tech-badge">Godot4.x</span>
+								<span class="tech-badge">Unity</span>
+                                <span class="tech-badge">Art & Graphisme</span>
+                                <span class="tech-badge">Sound design</span>
+                                <span class="tech-badge">UI/UX Design</span>
+                                <span class="tech-badge">GitHub</span>
+                                <span class="tech-badge">C#</span>
 								<span class="tech-badge">Gestion de projet</span>
-								<span class="tech-badge">Trello</span>
-								<span class="tech-badge">Make</span>
-								<span class="tech-badge">Note de cadrage</span>
-								<span class="tech-badge">Dossier pilote</span>
+								<span class="tech-badge">Piskel/Paint</span>
+                                <span class="tech-badge">Game design</span>
+                                <span class="tech-badge">Beta testing</span>
+								<span class="tech-badge">Gestion d'assets</span>
 							</div>
 						</div>
 					</div>
