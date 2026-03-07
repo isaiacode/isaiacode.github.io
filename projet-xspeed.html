@@ -27,11 +27,20 @@
 		<!-- Wrapper -->
 			<section id="main" class="wrapper">
 				<div class="inner">
-					<h1 class="major">Prototype : X-Speed Proto</h1>
+					<h1 class="major">XSPEED</h1>
 					
 					<div class="row">
+						<div class="col-12">
+							<h3>Contexte</h3>
+							<p>Actuellement en cours de développement pour une sortie prévue vers septembre (sur PC et mobile), ce jeu de réaction rapide type rogue lite est un de mes projets personnels fruit de ma passion pour le développement appris en autodidacte.</p>
+							<p>Ce jeu est inspiré du type de jeu “Ice slider” originalement dans le registre puzzle et casse tête, que j’ai revisité dans un format rapide et nerveux, avec progression rogue lite (répétition de niveau avec bonus à débloquer) dont le but est d’atteindre des scores toujours plus hauts.</p>
+						</div>
+					</div>
+
+					<hr />
+
+					<div class="row">
 						<div class="col-5 col-12-medium" style="text-align: center;">
-							
 							<div style="display: inline-block; width: 360px; height: 640px; background: #000; border-radius: 12px; overflow: hidden; border: 1px solid #333; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
 								<iframe 
 									id="godot-game"
@@ -42,40 +51,90 @@
 									allowfullscreen>
 								</iframe>
 							</div>
-
 							<div style="margin-top: 15px;">
 								<button class="button small fit" onclick="goFullscreen();">Plein écran</button>
 							</div>
 						</div>
 
 						<div class="col-7 col-12-medium" style="padding-top: 2em;">
+							<h3 style="margin-top: 0;">Essayer la Demo</h3>
+							<p>Prototype Web Demo de gameplay “ice slider” en grille isométrique. Tentez d’atteindre les <strong>10 000 points</strong> (astuce : dépassez les 100 de combo).</p>
 							
-							<h3 style="margin-top: 0;">Commandes</h3>
-							<ul class="alt">
-								<li><strong>Z, Q, S, D</strong> : Déplacement</li>
-								<li><strong>Espace</strong> : Saut</li>
-								<li><strong>R</strong> : Recommencer le niveau</li>
-							</ul>
+							<h3>Commandes</h3>
+							<div style="display: flex; justify-content: space-between; margin-bottom: 1em; max-width: 320px;">
+								<div style="flex: 1;">↖ <strong>J</strong> : Haut gauche</div>
+								<div style="flex: 1;">| <strong>G</strong> ↗ : Haut droite</div>
+							</div>
+							<div style="display: flex; justify-content: space-between; margin-bottom: 1em; max-width: 320px;">
+								<div style="flex: 1;">↙ <strong>N</strong> : Bas gauche</div>
+								<div style="flex: 1;">| <strong>B</strong> ↘ : Bas droite</div>
+							</div>
 
 							<hr />
 
 							<h3>Détails Techniques</h3>
-							<p>
-								Ce prototype a été conçu pour tester la vélocité des déplacements et la gestion des collisions haute fréquence.
-							</p>
-							<ul>
-								<li><strong>Moteur :</strong> Godot 4.x</li>
-								<li><strong>Rendu :</strong> Compatibility Mode (OpenGL 3)</li>
+							<ul class="alt">
+								<li><strong>Moteur :</strong> Godot 4.4</li>
+								<li><strong>Version :</strong> Prototype web HTML</li>
 								<li><strong>Hébergement :</strong> Netlify</li>
 							</ul>
-
-							<hr />
-
-							<p><em>Note : Si le jeu ne répond pas, cliquez une fois à l'intérieur du cadre pour activer les contrôles clavier.</em></p>
+							<p style="font-size: 0.8em; opacity: 0.7;">
+								<em>Note : Version Démo Web très allégée avec de nombreuses fonctionnalités désactivées (niveaux, missions, achats, musiques...).</em>
+							</p>
 						</div>
 					</div>
 
-					<ul class="actions" style="margin-top: 3em; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2em;">
+					<hr />
+
+					<div class="row">
+						<div class="col-7 col-12-medium">
+							<h3>Réalisation & évolutions</h3>
+							<p>Ce projet m'a permis d'appréhender la chaîne de production complète d'un jeu vidéo. En tant que développeur solo, j'ai dû alterner entre plusieurs rôles clés :</p>
+							<div class="row">
+								<div class="col-6 col-12-small">
+									<ul>
+										<li>Game & Level Design</li>
+										<li>Programmation GDScript</li>
+										<li>UI/UX Design</li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul>
+										<li>Technical Art & Graphisme</li>
+										<li>Sound Design</li>
+										<li>Stratégie de déploiement</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-5 col-12-medium">
+							<h3>Outils & Méthodes</h3>
+							<div style="display: flex; flex-wrap: wrap; gap: 8px;">
+								<style>
+									.tech-badge {
+										background: rgba(68, 180, 172, 0.2);
+										border: 1px solid #44b4ac;
+										border-radius: 4px;
+										padding: 0.2em 0.8em;
+										margin: 0.2em;
+										display: inline-block;
+										font-size: 0.85em;
+										color: #ffffff;
+									}
+								</style>
+								<span class="tech-badge">IA & Prompting</span>
+								<span class="tech-badge">Canva</span>
+								<span class="tech-badge">Gestion de projet</span>
+								<span class="tech-badge">Trello</span>
+								<span class="tech-badge">Make</span>
+								<span class="tech-badge">Note de cadrage</span>
+								<span class="tech-badge">Dossier pilote</span>
+							</div>
+						</div>
+					</div>
+
+					<ul class="actions" style="margin-top: 4em; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2em;">
 						<li><a href="index.html" class="button">Retour à l'accueil</a></li>
 					</ul>
 				</div>
