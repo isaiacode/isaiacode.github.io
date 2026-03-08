@@ -98,7 +98,9 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		background-color: #6c6e6e; /* Fallback */
+		background-image: linear-gradient(90deg, #44454f  0%, #675b56 100%);
+		color: rgba(225, 243, 255, 0.75);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -115,7 +117,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.55);
+		color: rgba(226, 243, 255, 0.766);
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 16.5pt;
 		font-weight: normal;
@@ -197,10 +199,10 @@ input, select, textarea {
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #ffe0d8, #ffe6f9);
+				background-image: -webkit-linear-gradient(to right, #ffe0d8, #ffe6f9);
+				background-image: -ms-linear-gradient(to right,  #ffe0d8, #ffe6f9);
+				background-image: linear-gradient(to right,  #ffe0d8, #ffe6f9);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -2552,11 +2554,11 @@ input, select, textarea {
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #247864;
+					color: #5a80d3;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
-					color: #44b4ac;
+					color: #5a80d3;
 				}
 
 /* Image */
@@ -3064,11 +3066,11 @@ input, select, textarea {
 			}
 
 		.spotlights > section:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.05);
+			background-color: rgba(0, 0, 0, 0.15);
 		}
 
 		.spotlights > section:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.1);
+			background-color: rgba(0, 0, 0, 0.3);
 		}
 
 		.spotlights > section.inactive > .image:before,
@@ -3236,35 +3238,37 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-color: #261c3e;
+			background-color: #1a252e;
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: #2d77d2;
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: #1a252e;
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: #262655;
 		}
 
 		.wrapper.style2-alt {
-			background-color: #3e4094;
+			background-color: #665e87;
 		}
 
 		.wrapper.style3 {
-			background-color: #247864;
+			background-color: #5a80d3;
 		}
 
 		.wrapper.style3-alt {
-			background-color: #44b4ac;
+			background-color: #276699; /* Fallback */
+			background-image: linear-gradient(45deg, #276699 0%, #975c49 100%);
+			color: rgba(255, 255, 255, 0.75);
 		}
 		.wrapper.style4 {
-			background-color: #247864; /* Fallback */
-			background-image: linear-gradient(135deg, #247864 0%, #0dbfff 100%);
+			background-color: #276699; /* Fallback */
+			background-image: linear-gradient(135deg, #276699 0%, #975c49 100%);
 			color: rgba(255, 255, 255, 0.75);
 		}
 
@@ -3379,7 +3383,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #5e42a6;
+		background-color: #403c7e;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
@@ -3533,7 +3537,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #262655;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3770,14 +3774,14 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:before {
-				background: #3c2c62;
+				background: #67879f;
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #ffad6f, #1e00cb );
+				background-image: -webkit-linear-gradient(to right, #ffad6f, #1e00cb);
+				background-image: -ms-linear-gradient(to right,  #ffad6f, #1e00cb);
+				background-image: linear-gradient(to right,  #ffad6f, #1e00cb);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3883,7 +3887,7 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
+		background-image: url("images/intro7.svg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
