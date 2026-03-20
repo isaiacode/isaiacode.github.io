@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function() {
             options: ["Qui est Isaïa Lemaitre ?", "Pourquoi ce Portfolio", "Parle-moi de toi"]
         },
         "Projets": {
-            text: "Ici vous pouvez retrouver ses trois projets principaux que vous pouvez explorer plus en détail, mais je peux également vous parler de certains de ses autres projets.",
+            text: "Ici vous pouvez retrouver trois des projets d’Isaia, et explorer plus en détail leur processus de création. Je peux également vous partager certains de ses autres projets.",
             options: ["Escape game VR", "Cours sur l'ingénierie pédagogique"]
         },
         "Competences": {
