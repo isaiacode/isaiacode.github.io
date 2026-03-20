@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Nunito:wght@400;600;700&family=Zen+Dots&display=swap');
 @import url(fontawesome-all.min.css);
 
 /*
@@ -99,7 +100,7 @@ input, select, textarea {
 
 	body {
 		background-color: #6c6e6e; /* Fallback */
-		background-image: linear-gradient(90deg, #44454f  0%, #675b56 100%);
+		background-image: linear-gradient(90deg, #19297a 0%, #18437f  100%);
 		color: rgba(225, 243, 255, 0.901);
 	}
 
@@ -117,8 +118,8 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: rgba(226, 243, 255, 0.766);
-		font-family: Arial, Helvetica, sans-serif;
+		color: rgba(222, 241, 255, 0.873);
+		font-family: 'Noto Sans', sans-serif;
 		font-size: 16.5pt;
 		font-weight: normal;
 		line-height: 1.75;
@@ -188,7 +189,7 @@ input, select, textarea {
 			text-decoration: none;
 		}
 
-	h1 {
+	h1 { 	
 		font-size: 5em;
 	}
 
@@ -225,15 +226,15 @@ input, select, textarea {
 	}
 
 	h4 {
-		font-size: 1em;
+		font-size: 0.75em;
 	}
 
 	h5 {
-		font-size: 0.8em;
+		font-size: 0.6em;
 	}
 
 	h6 {
-		font-size: 0.6em;
+		font-size: 0.5em;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -243,7 +244,7 @@ input, select, textarea {
 		}
 
 		h2 {
-			font-size: 1.25em;
+			font-size: 1em;
 		}
 
 		h3 {
@@ -3242,7 +3243,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #2d77d2;
+			background-color: #2f83e9;
 		}
 
 		.wrapper.style1-alt {
@@ -3250,11 +3251,13 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #262655;
+			background-color: #276699; /* Fallback */
+			background-image: linear-gradient(90deg, #384994 0%, #492b8e 100%);
+			color: rgba(255, 255, 255, 0.75);
 		}
 
 		.wrapper.style2-alt {
-			background-color: #665e87;
+			background-color: #6e5889;
 		}
 
 		.wrapper.style3 {
@@ -3263,12 +3266,12 @@ input, select, textarea {
 
 		.wrapper.style3-alt {
 			background-color: #276699; /* Fallback */
-			background-image: linear-gradient(45deg, #276699 0%, #975c49 100%);
+			background-image: linear-gradient(135deg, #276699 0%, #492b8e 100%);
 			color: rgba(255, 255, 255, 0.75);
 		}
 		.wrapper.style4 {
 			background-color: #276699; /* Fallback */
-			background-image: linear-gradient(135deg, #276699 0%, #975c49 100%);
+			background-image: linear-gradient(135deg, #3e94db 0%, #6946b9 100%);
 			color: rgba(255, 255, 255, 0.75);
 		}
 
@@ -3870,7 +3873,7 @@ input, select, textarea {
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #b74e91;
+							background-color: #ffb158;
 						}
 
 		}
@@ -3882,7 +3885,223 @@ input, select, textarea {
 			}
 
 		}
+/* =================================================================
+   🤖 CHATBOT CONTEXTUEL (ISAIA-BOT) - VERSION FINALE PRO
+   ================================================================= */
+/* Le conteneur global en bas à droite */
+	#chatbot-container {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		z-index: 10000;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end; /* Aligne le bouton et la bulle sur la droite */
+	}
 
+
+	#chatbot-bubble {
+		font-family: 'Nunito', sans-serif;
+		font-weight:800;
+		width: 500px;
+		position: relative;
+		height: 450px; /* Hauteur fixe pour forcer le scroll */
+		background: #a1a1a127;
+		border: 5px #bbe3ffa8;
+		border-radius: 10px;
+		padding: 15px 10px 15px 15px;
+		margin-bottom: 15px;
+		box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+		font-size: 0.9em;
+		display: none;
+		flex-direction: column; /* Organise le contenu de haut en bas */
+	}
+
+	#chatbot-bubble.visible {
+		display: flex; /* Remplace le display: block d'avant */
+		animation: fadeIn 0.3s ease-in-out;
+	}
+
+	/* La zone de défilement des messages */
+	#chat-messages {
+		flex-grow: 1;
+		overflow-y: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		padding-right: 5px;
+		scroll-behavior: smooth;
+	}
+
+	/* Personnalisation de la barre de scroll */
+	#chat-messages::-webkit-scrollbar { width: 5px; }
+	#chat-messages::-webkit-scrollbar-thumb { background:#ffffff; border-radius: 5px; }
+
+	/* 💬 Les bulles du Bot (Alignées à gauche) */
+	.msg-bot {
+		align-self: flex-start;
+		background:#ffeedc;
+		border-left: 3px solid #ffb158;
+		color:#1c1c6c;
+		padding: 12px 15px;
+		border-radius: 0 10px 10px 10px;
+		max-width: 85%;
+		line-height: 1.4;
+		cursor: pointer; /* 🪄 La petite main au survol */
+    	transition: transform 0.2s ease, filter 0.2s ease; /* Pour l'animation */
+	}
+	.msg-bot:hover {
+		transform: scale(1.02); /* Grossit très légèrement */
+		filter: brightness(1.05); /* S'éclaircit un peu */
+	}
+	.chat-turn:last-child .msg-bot {
+		cursor: default;
+		transform: none !important;
+		filter: none !important;
+	}
+
+	/* 💬 Les bulles de l'Utilisateur (Alignées à droite) */
+	.msg-user {
+		margin-left: auto; 
+		margin-top: 15px;
+		width: fit-content; /* La bulle s'ajuste à la taille du texte */
+		background: #ddffdc;
+		color: #1c1c6c;
+		padding: 12px 15px;
+		border-radius: 10px 0 10px 10px;
+		max-width: 85%; /* Mieux vaut 85% que 30% pour la lisibilité sur mobile */
+		animation: popIn 0.2s ease-out;
+	}
+
+	/* Le conteneur des options à cliquer */
+	.chat-options-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		margin-top: 5px;
+		animation: fadeIn 0.3s ease-in;
+	}
+
+	@keyframes popIn {
+		from { transform: scale(0.9); opacity: 0; }
+		to { transform: scale(1); opacity: 1; }
+	}
+
+/* Le bouton rond pour ouvrir/fermer */
+	#chatbot-toggle {
+    background: #ffffff44 !important; /* J'ai gardé ta couleur transparente */
+    color: white !important;
+    border: 0 !important;
+    border-radius: 50% !important; /* Le secret du cercle */
+    
+    /* Verrouillage absolu des dimensions */
+    width: 60px !important;
+    height: 60px !important;
+    min-width: 60px !important;
+    min-height: 60px !important;
+    max-width: 60px !important;
+    max-height: 60px !important;
+    
+    /* Annulation des marges du template */
+    padding: 0 !important; 
+    margin: 0 !important; 
+    
+    /* Centrage parfait de l'icône */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    line-height: 1 !important; 
+    font-size: 30px !important;
+    
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+}
+
+	#chatbot-toggle:hover {
+		transform: scale(1.1);
+	}
+
+/* Animation d'apparition douce */
+	@keyframes fadeIn {
+		from { opacity: 0; transform: translateY(10px); }
+		to { opacity: 1; transform: translateY(0); }
+	}
+
+	.chat-option {
+		margin-left: auto; 
+		display: block;
+		width: 50%;
+		background:rgb(243, 255, 242); /* Fond légèrement teinté avec ta couleur principale */
+		border: 2px solid #ffffff8e;
+		border-radius: 6px;
+		padding: 8px 12px;
+		margin-top: 8px;
+		color: #232353;
+		cursor: pointer;
+		font-size: 0.9em;
+		text-align: left;
+		transition: all 0.2s ease;
+		font-family: 'Nunito', sans-serif !important;
+	}
+
+	/* Effet au survol du bouton */
+		.chat-option:hover {
+			background: #ddffdc;
+			color: #2f4365; /* Le texte devient sombre pour bien contraster */
+			transform: translateX(-5px); /* Petit glissement vers la droite */
+		}
+
+	/* La nouvelle barre de retour FIXE en bas de la bulle */
+	#chat-back-fixed {
+		display: none; /* Caché au début de la conversation */
+		font-family: 'Nunito', sans-serif !important ;
+		font-weight: bolder;
+		margin-top: 10px;
+		padding-top: 12px;
+		border-top: 1px solid rgba(68, 180, 172, 0.3); /* Petite ligne de séparation */
+		text-align: left;
+		color: #ffffff;
+		cursor: pointer;
+		font-size: 0.85em;
+		transition: color 0.2s;
+		flex-shrink: 0; /* Empêche la barre de s'écraser quand il y a beaucoup de messages */
+	}
+
+
+	/* L'avatar du bot en haut à droite */
+	#bot-avatar {
+		position: absolute;
+		top: -20px;   /* Fait dépasser l'icône vers le haut */
+		left: -20px;  /* Fait dépasser l'icône vers la gauche */
+		width: 45px;  /* Légèrement plus petit pour que ça reste élégant */
+		height: 45px;
+		background: #ffffff; /* J'ai inversé les couleurs pour qu'il ressorte super bien */
+		border: 3px solid #ffb158; /* Bordure de la couleur du fond */
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 22px;
+		color: #ffb158;
+		z-index: 10; /* Le place au-dessus de la bordure de la bulle */
+		box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+		cursor: pointer; /* 🪄 Indique que l'avatar est cliquable */
+    	transition: background-color 0.3s ease;
+	}
+
+	/* L'animation quand le bot "parle" */
+	@keyframes botTalk {
+		0% { transform: scale(1) rotate(0deg); }
+		33% { transform: scale(1.15) rotate(-15deg); }
+		66% { transform: scale(1.15) rotate(15deg); }
+		100% { transform: scale(1) rotate(0deg); }
+	}
+
+	/* La classe qu'on va ajouter/retirer en JavaScript */
+	.avatar-talking {
+		animation: botTalk 0.3s ease-in-out;
+	}
 /* Intro */
 
 	#intro {
