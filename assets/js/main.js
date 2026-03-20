@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', function() {
             options: ["Escape game VR", "Cours sur l'ingénierie pédagogique"]
         },
         "Competences": {
-            text: "Cette section résume l'ensemble des compétences acquises à travers ces projets et formations académiques et professionnelles, vous pouvez retrouver plus de détails sur son CV.",
+            text: "Cette section résume l'ensemble des compétences acquises à travers ces projets et formations académiques et professionnelles.",
             options: ["Savoir-faire", "Savoir-être"]
         },
         "Reflexion": {
