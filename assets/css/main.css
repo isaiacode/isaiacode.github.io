@@ -3918,6 +3918,7 @@ input, select, textarea {
 		max-width: calc(100vw - 40px); /* Empêche la bulle de dépasser l'écran en largeur (laisse 20px de marge de chaque côté) */
     	max-height: calc(100vh - 120px); /* Empêche de dépasser en hauteur (laisse de la place pour ton bouton) */
 	}
+	
 
 	#chatbot-bubble.visible {
 		display: flex; /* Remplace le display: block d'avant */
@@ -4104,6 +4105,19 @@ input, select, textarea {
 	.avatar-talking {
 		animation: botTalk 0.3s ease-in-out;
 	}
+
+/* Règles appliquées UNIQUEMENT sur les écrans de téléphone (moins de 736px de large) */
+@media screen and (max-width: 736px) {
+    #chatbot-bubble {
+        width: 90vw; /* Prend 90% de la largeur de l'écran */
+        height: 70vh; /* Prend 70% de la hauteur de l'écran */
+        right: 5vw; /* Se décale un peu pour rester centrée */
+        bottom: 80px; /* S'assure de ne pas cacher le bouton d'ouverture */
+    }
+}
+
+/* Fin du chatbot */
+
 /* Intro */
 
 	#intro {

@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         "Projets": {
             text: "Ici vous pouvez retrouver ses trois projets principaux que vous pouvez explorer plus en détail, mais je peux également vous parler de certains de ses autres projets.",
-            options: ["Escape game VR", "Cours sur L'ingénierie pédagogique"]
+            options: ["Escape game VR", "Cours sur l'ingénierie pédagogique"]
         },
         "Competences": {
             text: "Cette section résume l'ensemble des compétences acquises à travers ces projets et formations académiques et professionnelles, vous pouvez retrouver plus de détails sur son CV.",
