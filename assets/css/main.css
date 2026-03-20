@@ -3915,6 +3915,8 @@ input, select, textarea {
 		font-size: 0.9em;
 		display: none;
 		flex-direction: column; /* Organise le contenu de haut en bas */
+		max-width: calc(100vw - 40px); /* Empêche la bulle de dépasser l'écran en largeur (laisse 20px de marge de chaque côté) */
+    	max-height: calc(100vh - 120px); /* Empêche de dépasser en hauteur (laisse de la place pour ton bouton) */
 	}
 
 	#chatbot-bubble.visible {
