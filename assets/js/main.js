@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', function() {
             options: ["I. Enjeux Politiques du Numérique", "II. Éthique de l'Intelligence Artificielle", "III. Fracture & Inclusion"]
         },
         "Qui est Isaïa Lemaitre ?": {
-            text: "Isaïa Lemaitre est un étudiant actuellement en première année de Master en Humanités Numériques, passionné de science, de philosophie et de développement.",
+            text: "Isaïa est un étudiant actuellement en première année de Master en Humanités Numériques, passionné de science, de philosophie et de développement.",
             options: ["Pourquoi ce Portfolio", "Parle-moi de toi"]
         },
         "Pourquoi ce Portfolio": {
@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded', function() {
             options: ["Qui est Isaïa Lemaitre ?", "Parle-moi de toi"]
         },
         "Parle-moi de toi": {
-            text: "Oui, je suis un chatbot de type arborescence, j'ai été programmé et designé directement dans le portfolio (HTML, CSS, JS), je m'adapte en fonction de la section du portfolio et je peux aussi changer de couleur si on clique sur mon icône.",
+            text: "Oui, je suis un chatbot basé sur une structure arborescente, j'ai été programmé et designé directement sur ce portfolio (HTML, CSS, JS). Je m'adapte dynamiquement à chaque section du portfolio et je peux aussi changer de couleur si on clique sur mon icône.",
             options: ["Qui est Isaïa Lemaitre ?", "Pourquoi ce Portfolio"]
         },
         "Escape game VR": {
@@ -333,7 +333,7 @@ document.addEventListener('DOMContentLoaded', function() {
             options: ["Savoir-faire"]
         },
         "Master de philosophie ?": {
-            text: "Bien qu'étant un de ses centres d'intérêt, le Master en Humanités Numériques est à la croisée de son autre passion et permet justement d'allier la réflexion critique à la conception numérique. Et il n'est pas impossible que le master de philosophie se fasse à la suite ou dans plusieurs années.",
+            text: "Passionné par les enjeux de la pensée et de la technologie, ce Master en Humanités Numériques représente le compromis idéal pour conjuguer réflexion critique en SHS et expertises techniques.",
             options: []
         },
         "Que recherche Isaïa ?": {
@@ -353,7 +353,7 @@ document.addEventListener('DOMContentLoaded', function() {
             options: ["Choix des modules", "Module Intuitif", "Module sûr"]
         },
         "Choix des modules": {
-            text: "Pour concevoir ces modules, le groupe a analysé et comparé plusieurs solutions et plusieurs logiciels au regard des besoins et objectifs. Mais l'option de modularité est aussi une caractéristique, chaque maillon de la chaîne peut être substitué par un autre, par exemple pour stocker les données individuelles on peut remplacer le Google Sheets par un fichier Excel ou une base MySQL, ou encore utiliser Mistral IA plutôt que Gemini AI. La structure et le résultat sont fixes mais les maillons (logiciels) sont modulables",
+            text: "Pour concevoir ces modules, le groupe a analysé et comparé plusieurs solutions et plusieurs logiciels au regard des besoins et objectifs. Mais l'option de modularité est aussi une caractéristique, chaque maillon de la chaîne peut être substitué par un autre, par exemple pour stocker les données individuelles on peut remplacer le Google Sheets par un fichier Excel ou une base MySQL, ou encore utiliser Mistral IA plutôt que Gemini AI. La structure et le résultat sont fixes mais les maillons (logiciels) sont modulables.",
             options: ["Module Intuitif", "Module sûr"]
         },
         "Module Intuitif": {
@@ -365,11 +365,11 @@ document.addEventListener('DOMContentLoaded', function() {
             options: ["Inconvénients"]
         },
         "Inconvénients": {
-            text: "Les données traitées par le module peuvent être sensibles puisqu'elles relèvent du social et médico-social, il est important que la solution proposée protège complètement ces données et qu'elles soient le moins possible dépendantes d'un tiers privé. Après une analyse de risque/gravité, nous avons jugé qu'il serait intéressant de proposer des alternatives offrant plus de sûreté.",
+            text: "Les données traitées par le module peuvent être sensibles puisqu'elles relèvent du social et médico-social, il est important que la solution proposée protège complètement ces données et qu'elles soient le moins possible dépendantes d'un tiers privé. Après une analyse de risque/gravité, le groupe a jugé qu'il serait intéressant de proposer des alternatives offrant plus de sûreté.",
             options: ["Avantages"]
         },
         "Module sûr": {
-            text: "Le module sûr fonctionne avec des outils/logiciels français et permettant une souveraineté des données : Mistral, Bot Python, Nolej, Digipad. Ce module traite les données en réseau presque fermé minimisant le partage d'informations sur des tiers privés et donc le risque de fuite ou de perte d'informations sensibles. Cependant ce module est plus compliqué à mettre en place et à maintenir.",
+            text: "Le module sûr fonctionne avec des outils/logiciels français permettant une souveraineté des données : Mistral, Bot Python, Nolej, Digipad. Ce module traite les données en réseau presque fermé minimisant le partage d'informations sur des tiers privés et donc le risque de fuite ou de perte d'informations sensibles. Cependant ce module est plus compliqué à mettre en place et à maintenir.",
             options: ["Coût financier", "Fracture Numérique"]
         },
         "Coût financier": {

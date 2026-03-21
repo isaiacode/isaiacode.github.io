@@ -4106,7 +4106,7 @@ input, select, textarea {
 
 	/* La classe qu'on va ajouter/retirer en JavaScript */
 	.avatar-talking {
-		animation: botTalk 0.3s ease-in-out;
+		animation: botTalk 0.4s ease-in-out;
 	}
 
 /* Règles appliquées UNIQUEMENT sur les écrans de téléphone (moins de 736px de large) */
