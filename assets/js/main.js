@@ -280,10 +280,6 @@ document.addEventListener('DOMContentLoaded', function() {
             text: "Cette section résume l'ensemble des compétences acquises à travers ces projets et formations académiques et professionnelles.",
             options: ["Savoir-faire", "Savoir-être"]
         },
-        "Reflexion": {
-            text: "Issu d'une licence de philosophie et alerte sur les sujets contemporains, Isaïa expose dans \"Socle théorique & Enjeux\" les éléments théoriques qui encadrent sa pratique.",
-            options: ["Master de philosophie ?"]
-        },
         "Contacts": {
             text: "Merci d'avoir parcouru ce portfolio, voici quelques renseignements pratiques qui pourraient vous servir.",
             options: ["Que recherche Isaïa ?", "Disponibilité/Calendrier"]
@@ -331,10 +327,6 @@ document.addEventListener('DOMContentLoaded', function() {
         "Savoir-être": {
             text: "Ses expériences professionnelles étudiantes notamment à l'étranger, ainsi que ses projets à long terme en groupe ou à distance dotent Isaïa d'une force relationnelle et d'une ambition productive et passionnée.",
             options: ["Savoir-faire"]
-        },
-        "Master de philosophie ?": {
-            text: "Passionné par les enjeux de la pensée et de la technologie, ce Master en Humanités Numériques représente le compromis idéal pour conjuguer réflexion critique en SHS et expertises techniques.",
-            options: []
         },
         "Que recherche Isaïa ?": {
             text: "Actuellement, Isaïa est à la recherche d'une alternance ou d'un stage en tant qu'ingénieur pédagogique ou médiateur numérique, dans le cadre de sa deuxième année de Master en Humanités Numériques.",
