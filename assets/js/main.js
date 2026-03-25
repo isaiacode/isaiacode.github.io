@@ -274,11 +274,11 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         "Projets": {
             text: "Ici vous pouvez retrouver trois des projets d’Isaia, et explorer plus en détail leur processus de création. Je peux également vous partager certains de ses autres projets.",
-            options: ["Cours sur L'ingénierie pédagogique","ChatBot","Escape game VR"]
+            options: ["Cours sur L'ingénierie pédagogique","Chat Bot","Escape game VR"]
         },
         "Competences": {
             text: "Cette section résume l'ensemble des compétences acquises à travers ces projets et formations académiques et professionnelles.",
-            options: ["Savoir-faire", "Savoir-être"]
+            options: ["Savoir-faire", "Savoir-être","Socle théorique & Enjeux"]
         },
         "Contacts": {
             text: "Merci d'avoir parcouru ce portfolio, voici quelques renseignements pratiques qui pourraient vous servir.",
@@ -314,19 +314,27 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         "Escape game VR": {
             text: "Un projet d'escape game en réalité virtuelle sur le thème des perspectives, qui a été mis en pause après un changement de politique de l'outil auteur (UNITY).",
-            options: []
+            options: ["Chat Bot","Cours sur L'ingénierie pédagogique"]
+        },
+        "Chat Bot": {
+            text: "Vous êtes actuellement en train de communiquer avec un outil de médiation numérique et pédagogique dont le but est l'accompagnement interactif du portfolio. Ce projet, en plus d'être une vitrine technique, ajoute une dimension interactionnelle didactique pour la navigation. Elle offre également une première interaction Homme-Machine-Homme asynchrone avec Isaïa Lemaitre.",
+            options: ["Escape game VR","Cours sur L'ingénierie pédagogique"]
         },
         "Cours sur L'ingénierie pédagogique": {
             text: "Isaïa a réalisé une présentation didactique illustrant tant sur la forme que sur le fond les caractéristiques et compétences du métier d'ingénieur pédagogique.",
-            options: []
+            options: ["Escape game VR","Chat Bot"]
         },
         "Savoir-faire": {
             text: "De par son parcours diversifié, Isaïa fait preuve d'adaptabilité et de curiosité dans divers domaines qu'il rassemble aujourd'hui en ingénierie et médiation numérique et culturelle.",
-            options: ["Savoir-être"]
+            options: ["Savoir-être","Socle théorique & Enjeux"]
         },
         "Savoir-être": {
             text: "Ses expériences professionnelles étudiantes notamment à l'étranger, ainsi que ses projets à long terme en groupe ou à distance dotent Isaïa d'une force relationnelle et d'une ambition productive et passionnée.",
-            options: ["Savoir-faire"]
+            options: ["Savoir-faire","Socle théorique & Enjeux"]
+        },
+        "Socle théorique & Enjeux": {
+            text: "Afin de proposer des solutions cohérentes et véritablement adaptées aux besoins des utilisateurs, l'ingénierie numérique nécessite une compréhension fine de ses propres rouages et de son environnement, Isaia expose dans cette partie les éléments théoriques qui encadrent sa pratique.",
+            options: ["Savoir-être","Savoir-faire"]
         },
         "Que recherche Isaïa ?": {
             text: "Actuellement, Isaïa est à la recherche d'une alternance ou d'un stage en tant qu'ingénieur pédagogique ou médiateur numérique, dans le cadre de sa deuxième année de Master en Humanités Numériques.",
@@ -462,11 +470,11 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         "ChatBot": {
             text: "Vous êtes actuellement en train de communiquer avec un outil de médiation numérique et pédagogique dont le but est l'accompagnement interactif du portfolio. Ce projet, en plus d'être une vitrine technique, ajoute une dimension interactionnelle didactique pour la navigation. Elle offre également une première interaction Homme-Machine-Homme asynchrone avec Isaïa Lemaitre.",
-            options: []
+            options: ["Projet CEMEA"]
         },
         "Projet CEMEA": {
             text: "Disponible sur ce portfolio, le projet de module autonome de centralisation est une solution de médiation numérique transformant une soixantaine de mails en ressources pédagogiques adaptées dont vous pouvez voir plus de détails dans la section dédiée.",
-            options: []
+            options: ["ChatBot"]
         },
         "Le droit d'auteur": {
             text: "En tant que concepteur numérique, il est primordial pour Isaïa de maîtriser les cadres légaux qui structurent et permettent la transmission des savoirs, comme par exemple l'exception pédagogique ou encore les SGC (Sociétés de Gestion Collective).",
