@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Le gros bouton d'ouverture/fermeture
         toggleBtn = document.createElement('button');
         toggleBtn.id = 'chatbot-toggle';
-        toggleBtn.innerHTML = '<i class="fas fa-comment-dots"></i>';
+        toggleBtn.innerHTML = '<i class="fas fa-robot"></i>';
 
         // On assemble le tout
         container.appendChild(bubble);
@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (bubble.classList.contains('visible')) {
                 toggleBtn.innerHTML = '<i class="fas fa-times"></i>';
             } else {
-                toggleBtn.innerHTML = '<i class="fas fa-comment-dots"></i>';
+                toggleBtn.innerHTML = '<i class="fas fa-robot"></i>';
             }
         });
     }
